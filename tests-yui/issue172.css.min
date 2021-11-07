@@ -1,1 +1,1 @@
-div{transform-origin:0;-ms-transform-origin:0}
+div{transform-origin:0 0;-ms-transform-origin:0 0}
