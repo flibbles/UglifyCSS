@@ -168,7 +168,7 @@ function convertRelativeUrls(css, options, preservedTokens) {
                 sb.push(preserver)
 
             } else {
-                sb.push(`url(${token})`)
+                sb.push('url('+token+')')
             }
 
             appendIndex = endIndex + 1
@@ -543,7 +543,7 @@ function processString(content = '', options = defaultOptions) {
         }
 
         // in all other cases kill the comment
-        content = content.replace(`/*${placeholder}*/`, '')
+        content = content.replace('/*'+placeholder+'*/', '')
     }
 
     // parse simple @variables blocks and remove them
@@ -630,7 +630,7 @@ function processString(content = '', options = defaultOptions) {
         preservedTokens.push(f2b.pop())
         f2b.push(___PRESERVED_TOKEN_ + (preservedTokens.length - 1) + '___')
         f2b = f2b.join(' ')
-        return `${f1}:${f2b}`
+        return ''+f1+':'+f2b
     })
 
     // preserve 0% in hsl and hsla color definitions
