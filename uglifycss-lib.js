@@ -604,6 +604,7 @@ function processString(content = '', options = defaultOptions) {
     content = content.replace(/\s+not\(/g, ' not (');
     content = content.replace(/and\(/g, 'and (');
     content = content.replace(/or\(/g, 'or (');
+    content = content.replace(/@supports\(/g, '@supports (');
 
     // restore spaces for !important
     content = content.replace(/!important/g, ' !important')

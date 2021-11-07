@@ -1,0 +1,1 @@
+@supports (display:table-cell) and (display:list-item) and (display:contents){display:block}@supports (transform-style:preserve) or (-moz-transform-style:preserve) or (-o-transform-style:preserve) or (-webkit-transform-style:preserve){display:block}@supports not (display:grid){div{float:right}}
