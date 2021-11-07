@@ -6,7 +6,7 @@ a {
   animation: blink 2s ease 0s;
   transition: opacity .0s;
   transition-delay: 0.0ms;
-  transform: rotate3d(0grad, 0rad, 0deg);
+  transform: rotate3d(0grad, 0rad, 0, 0deg);
   pitch: 0KHZ;
   pitch:
 0hz; /* intentionally on next line */
